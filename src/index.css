@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.P\{\20px\}{
+  padding: 20px;
+  color: greenyellow;
+}
+
+.win{
+  font-size: 80px;
+  position: absolute;
+  animation: lose 2s;
+  color: aqua;
+  top: 100px;
+}
+
+.lose{
+  font-size: 80px;
+  position: absolute;
+  animation: lose 2s ;
+  width: 100%;
+  color: aqua;
+  top: 100px;
+}
+
+  @keyframes lose {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    0%   { left:0px; top:0px;font-size: 40px;width: 10%;}
+    25%  { left:200px; top:0px;font-size: 50px;width: 20%;}
+    50%  { left:400px; top:0px;font-size: 65px;width: 40%;}
+    75%  { left:300px; top:100px;font-size: 70px;width: 60%;}
+    100% { left:0px; top:100px;font-size: 80px;width: 80%;}
+  }
+  
